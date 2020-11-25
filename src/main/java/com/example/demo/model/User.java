@@ -19,4 +19,10 @@ public class User {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
+	public String toString() {
+		String str = (firstName != null) ? firstName + " " : "";
+		str += (lastName != null) ? lastName : "";
+		return str.trim();
+	}
 }
